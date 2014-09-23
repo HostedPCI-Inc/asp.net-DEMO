@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{10656FCC-2866-463B-A980-69D08EE13B7F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HostedPCI.Domain</RootNamespace>
+    <AssemblyName>HostedPCI.Domain</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Protocol\Abstract\ICreditCard.cs" />
+    <Compile Include="Protocol\Abstract\ICustomerInfo.cs" />
+    <Compile Include="Protocol\Abstract\IFraudDetection.cs" />
+    <Compile Include="Protocol\Abstract\IAddress.cs" />
+    <Compile Include="Protocol\Abstract\IOrder.cs" />
+    <Compile Include="Protocol\Abstract\IOrderItem.cs" />
+    <Compile Include="Protocol\Abstract\IThreeDSec.cs" />
+    <Compile Include="Protocol\Abstract\ITransaction.cs" />
+    <Compile Include="Abstract\Services\IHostedPciConfiguration.cs" />
+    <Compile Include="Abstract\Services\IHostedPciService.cs" />
+    <Compile Include="Abstract\Services\IHostedPciDataConverter.cs" />
+    <Compile Include="Enums\RequestType.cs" />
+    <Compile Include="Helpers\HostedPciConfiguration.cs" />
+    <Compile Include="Helpers\HostedPciDataConverter.cs" />
+    <Compile Include="Helpers\HostedPciService.cs" />
+    <Compile Include="Helpers\ObjectToDictionaryHelper.cs" />
+    <Compile Include="Model\ApiCredentials.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Protocol\AuthRequest.cs" />
+    <Compile Include="Protocol\Abstract\AuthOrSaleRequest.cs" />
+    <Compile Include="Protocol\Abstract\CaptureOrCreditOrVoidRequest.cs" />
+    <Compile Include="Protocol\CaptureRequest.cs" />
+    <Compile Include="Protocol\VoidRequest.cs" />
+    <Compile Include="Protocol\CreditRequest.cs" />
+    <Compile Include="Protocol\SaleRequest.cs" />
+    <Compile Include="Protocol\Abstract\BaseRequest.cs" />
+    <Compile Include="Protocol\Models\FraudDetection.cs" />
+    <Compile Include="Protocol\Models\OrderItem.cs" />
+    <Compile Include="Protocol\Models\ThreeDSec.cs" />
+    <Compile Include="Protocol\Models\ShippingAddress.cs" />
+    <Compile Include="Protocol\Models\Order.cs" />
+    <Compile Include="Protocol\Models\BillingAddress.cs" />
+    <Compile Include="Protocol\Models\CreditCard.cs" />
+    <Compile Include="Protocol\Models\Transaction.cs" />
+    <Compile Include="Protocol\Models\CustomerInfo.cs" />
+    <Compile Include="Protocol\Response.cs" />
+    <Compile Include="Protocol\Enums\ResponseStatus.cs" />
+    <Compile Include="Protocol\Enums\Status.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

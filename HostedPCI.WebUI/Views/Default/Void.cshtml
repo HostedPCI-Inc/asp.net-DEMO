@@ -1,0 +1,12 @@
+﻿@model HostedPCI.WebUI.Models.CaptureOrCreditOrVoidRequestModel
+@{
+    ViewBag.Title = "Void";
+    ViewBag.PageTitle = "Void";
+}
+@using (Html.BeginForm("Void", "Default", FormMethod.Post))
+{  
+    @Html.Partial("~/Views/Default/Partials/_CaptureOrCreditOrVoidRequest.cshtml", Model)
+    <div>
+        <input type="submit" value="Send request" />
+    </div>
+} 

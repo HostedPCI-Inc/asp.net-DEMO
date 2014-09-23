@@ -1,0 +1,99 @@
+﻿@model HostedPCI.WebUI.Models.RequestResultModel
+@{
+    ViewBag.Title = "Response";
+    ViewBag.PageTitle = "Response";
+}
+
+<div style="width:50%;height:600px;display: block;float:left;">
+ 
+    <div class="form-row">
+        <span class="label">Status:</span>
+        <span class="input">@Model.Response.Status</span>
+    </div>
+
+    <div class="form-row">
+        <span class="label">ErrorId:</span>
+        <span class="input">@Model.Response.ErrorId</span>
+    </div>
+
+    <div class="rowsep"></div>
+
+    <div class="form-row">
+        <span class="label">ResponseStatus:</span>
+        <span class="input">@Model.Response.ResponseStatus</span>
+    </div>
+    <div class="form-row">
+        <span class="label">ResponseStatusCode:</span>
+        <span class="input">@Model.Response.ResponseStatusCode</span>
+    </div>
+    <div class="form-row">
+        <span class="label">ResponseStatusDescription:</span>
+        <span class="input">@Model.Response.ResponseStatusDescription</span>
+    </div>
+    <div class="form-row">
+        <span class="label">ResponseStatusName:</span>
+        <span class="input">@Model.Response.ResponseStatusName</span>
+    </div>
+    <div class="form-row">
+        <span class="label">ResponseStatusReasonCode:</span>
+        <span class="input">@Model.Response.ResponseStatusReasonCode</span>
+    </div>
+
+    <div class="rowsep"></div>
+
+    <div class="form-row">
+        <span class="label">ProcessorRefId:</span>
+        <span class="input">@Model.Response.ProcessorRefId</span>
+    </div>
+    <div class="form-row">
+        <span class="label">ProcessorType:</span>
+        <span class="input">@Model.Response.ProcessorType</span>
+    </div>
+
+    <div class="rowsep"></div>
+
+    <div class="form-row">
+        <span class="label">FraudServiceFullNativeResp:</span>
+        <span class="input">@Model.Response.FraudServiceFullNativeResp</span>
+    </div>
+    <div class="form-row">
+        <span class="label">FullNativeResp:</span>
+        <span class="input">@Model.Response.FullNativeResp</span>
+    </div>
+
+    <div class="rowsep"></div>
+
+    <div class="form-row">
+        <span class="label">ThreeDSAcsUrl:</span>
+        <span class="input">@Model.Response.ThreeDSAcsUrl</span>
+    </div>
+    <div class="form-row">
+        <span class="label">ThreeDSPARequest:</span>
+        <span class="input">@Model.Response.ThreeDSPARequest</span>
+    </div>
+    <div class="form-row">
+        <span class="label">ThreeDSTransactionId:</span>
+        <span class="input">@Model.Response.ThreeDSTransactionId</span>
+    </div>
+</div>
+
+
+<div style="width:50%;height:600px;display: block;float:left;">
+    <h2>Request Url:</h2>
+    <div>
+        @Model.Url
+    </div>
+    <h2>Raw Request:</h2>
+    <div>
+        @Html.TextAreaFor(m => m.RawRequest, new { style = "width:100%;height:300px;" })
+    </div>
+    <h2>Raw Response:</h2>
+    <div>
+        @Html.TextAreaFor(m => m.RawResponse, new { style = "width:100%;height:200px;" })
+    </div>
+</div>
+
+
+
+
+

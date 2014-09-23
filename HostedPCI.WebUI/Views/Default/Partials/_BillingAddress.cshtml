@@ -1,0 +1,36 @@
+﻿@model HostedPCI.WebUI.Models.AuthOrSaleRequestModel
+<div class="form-row">
+    <span class="label">FirstName<span class="red">*</span>:</span>
+    <span class="input">@Html.EditorFor(m => m.CustomerInfo.BillingAddress.FirstName)</span>
+    <span>@Html.ValidationMessageFor(m => m.CustomerInfo.BillingAddress.FirstName)</span>
+</div>
+<div class="form-row">
+    <span class="label">LastName<span class="red">*</span>:</span>
+    <span class="input">@Html.EditorFor(m => m.CustomerInfo.BillingAddress.LastName)</span>
+    <span>@Html.ValidationMessageFor(m => m.CustomerInfo.BillingAddress.LastName)</span>
+</div>
+<div class="form-row">
+    <span class="label">Country<span class="red">*</span>:</span>
+    <span class="input">@Html.EditorFor(m => m.CustomerInfo.BillingAddress.Country)</span>
+    <span>@Html.ValidationMessageFor(m => m.CustomerInfo.BillingAddress.Country)</span>
+</div>
+<div class="form-row">
+    <span class="label">State<span class="red">*</span>:</span>
+    <span class="input">@Html.EditorFor(m => m.CustomerInfo.BillingAddress.State)</span>
+    <span>@Html.ValidationMessageFor(m => m.CustomerInfo.BillingAddress.State)</span>
+</div>
+<div class="form-row">
+    <span class="label">City<span class="red">*</span>:</span>
+    <span class="input">@Html.EditorFor(m => m.CustomerInfo.BillingAddress.City)</span>
+    <span>@Html.ValidationMessageFor(m => m.CustomerInfo.BillingAddress.City)</span>
+</div>
+<div class="form-row">
+    <span class="label">ZipCode<span class="red">*</span>:</span>
+    <span class="input">@Html.EditorFor(m => m.CustomerInfo.BillingAddress.ZipCode)</span>
+    <span>@Html.ValidationMessageFor(m => m.CustomerInfo.BillingAddress.ZipCode)</span>
+</div>
+<div class="form-row">
+    <span class="label">Address<span class="red">*</span>:</span>
+    <span class="input">@Html.EditorFor(m => m.CustomerInfo.BillingAddress.Address)</span>
+    <span>@Html.ValidationMessageFor(m => m.CustomerInfo.BillingAddress.Address)</span>
+</div>

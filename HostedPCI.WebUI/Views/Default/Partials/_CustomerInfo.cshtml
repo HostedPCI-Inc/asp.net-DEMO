@@ -1,0 +1,27 @@
+﻿@model HostedPCI.WebUI.Models.AuthOrSaleRequestModel
+<div>
+    <h2>Customer Info</h2>
+</div>
+<div class="form-row">
+    <span class="label">Email<span class="red">*</span>:</span>
+    <span class="input">@Html.EditorFor(m => m.CustomerInfo.Email)</span>
+    <span>@Html.ValidationMessageFor(m => m.CustomerInfo.Email)</span>
+</div>
+<div class="form-row">
+    <span class="label">CustomerId<span class="red">*</span>:</span>
+    <span class="input">@Html.EditorFor(m => m.CustomerInfo.CustomerId)</span>
+    <span>@Html.ValidationMessageFor(m => m.CustomerInfo.CustomerId)</span>
+</div>
+<div class="form-row">
+    <span class="label">CustomerIP:</span>
+    <span class="input">@Html.EditorFor(m => m.CustomerInfo.CustomerIP)</span>
+    <span>@Html.ValidationMessageFor(m => m.CustomerInfo.CustomerIP)</span>
+</div>
+<div>
+    <h3>Billing Address</h3>
+    @Html.Partial("~/Views/Default/Partials/_BillingAddress.cshtml", Model)
+</div>
+<div>
+    <h3>Shipping Address</h3>
+    @Html.Partial("~/Views/Default/Partials/_ShippingAddress.cshtml", Model)
+</div>

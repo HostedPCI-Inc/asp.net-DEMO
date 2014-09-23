@@ -1,0 +1,138 @@
+body
+{
+    font-size: .85em;
+    font-family: "Trebuchet MS", Verdana, Helvetica, Sans-Serif;
+    color: #232323;
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+header,
+footer,
+nav,
+section {
+    display: block;
+}
+
+.rowsep 
+{
+    display: block;
+    border-top: 1px dashed #ccc;
+    margin: 20px;
+    height: 1px;
+}
+
+.content {
+    margin: 10px;
+}
+
+.page-title {
+    background-color: #eaeaea;
+    padding: 5px 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.hint {
+    color: #999999;
+    margin-bottom: 25px;
+}
+
+/* Styles for basic forms
+-----------------------------------------------------------*/
+
+fieldset 
+{
+    border:1px solid #ddd;
+    padding:0 1.4em 1.4em 1.4em;
+    margin:0 0 1.5em 0;
+}
+
+legend 
+{
+    font-size:1.2em;
+    font-weight: bold;
+}
+
+textarea 
+{
+    min-height: 75px;
+}
+
+.editor-label 
+{
+    margin: 1em 0 0 0;
+}
+
+.editor-field 
+{
+    margin:0.5em 0 0 0;
+}
+
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error
+{
+    color: #ff0000;
+}
+
+.field-validation-valid
+{
+    display: none;
+}
+
+.input-validation-error
+{
+    border: 1px solid #ff0000;
+    background-color: #ffeeee;
+}
+
+.validation-summary-errors
+{
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.validation-summary-valid
+{
+    display: none;
+}
+
+
+/* Styles
+-----------------------------------------------------------*/
+
+.red {
+    color: #ff0000;
+}
+
+.form-row 
+{
+    clear: both;
+    display: block;
+    height: 25px;
+}
+
+.form-row .label {
+    width: 170px;
+    color: #000;
+    display: block;
+    text-align: right;
+    float: left;
+    padding-right: 10px;
+    line-height: 22px;
+}
+
+.form-row .input {
+    width: 300px;
+    color: #000;
+    line-height: 22px;
+    text-align: left;
+}
+
+.form-row .input input[type=text]
+{
+    width: 280px;
+    border: 1px solid #cccccc;
+}

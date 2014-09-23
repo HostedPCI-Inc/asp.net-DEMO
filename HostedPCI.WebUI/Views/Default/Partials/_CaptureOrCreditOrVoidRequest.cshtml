@@ -1,0 +1,34 @@
+﻿@model HostedPCI.WebUI.Models.CaptureOrCreditOrVoidRequestModel
+<div class="form-row">
+    <span class="label">Amount<span class="red">*</span>:</span>
+    <span class="input">@Html.EditorFor(m => m.Amount)</span>
+    <span>@Html.ValidationMessageFor(m => m.Amount)</span>
+</div>
+<div class="form-row">
+    <span class="label">CurrencyCode<span class="red">*</span>:</span>
+    <span class="input">@Html.EditorFor(m => m.CurrencyCode)</span>
+    <span>@Html.ValidationMessageFor(m => m.CurrencyCode)</span>
+</div>
+<div class="form-row">
+    <span class="label">MerchantRefId<span class="red">*</span>:</span>
+    <span class="input">@Html.EditorFor(m => m.MerchantRefId)</span>
+    <span>@Html.ValidationMessageFor(m => m.MerchantRefId)</span>
+</div>
+<div class="form-row">
+    <span class="label">&nbsp;</span>
+    <span class="hint">Merchant Reference Number (order Id)</span>
+</div>
+<div class="form-row">
+    <span class="label">ProcessorRefId<span class="red">*</span>:</span>
+    <span class="input">@Html.EditorFor(m => m.ProcessorRefId)</span>
+    <span>@Html.ValidationMessageFor(m => m.ProcessorRefId)</span>
+</div>
+<div class="form-row" style="height:80px;">
+    <span class="label" style="height:80px;">&nbsp;</span>
+    <span class="hint" style="height:80px;">
+        Processor ID provided from Authorization or Sale.
+        <br/>The value is returned from an authorization transaction and must be
+        <br/>provided for funds specified (partial or full) to be voided and funds
+        <br/>relinquished back to the original credit card in question.
+    </span>
+</div>

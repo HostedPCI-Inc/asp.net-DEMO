@@ -1,0 +1,37 @@
+﻿@model HostedPCI.WebUI.Models.AuthOrSaleRequestModel
+@for (var i = 0; i < Model.Order.OrderItems.Length; i++)
+{
+    <div>
+        <h3>Order item @(i+1)</h3>
+    </div>
+    <div class="form-row">
+        <span class="label">Id:</span>
+        <span class="input">@Html.EditorFor(m => m.Order.OrderItems[i].Id)</span>
+        <span>@Html.ValidationMessageFor(m => m.Order.OrderItems[i].Id)</span>
+    </div>
+    <div class="form-row">
+        <span class="label">Name:</span>
+        <span class="input">@Html.EditorFor(m => m.Order.OrderItems[i].Name)</span>
+        <span>@Html.ValidationMessageFor(m => m.Order.OrderItems[i].Name)</span>
+    </div>
+    <div class="form-row">
+        <span class="label">Price:</span>
+        <span class="input">@Html.EditorFor(m => m.Order.OrderItems[i].Price)</span>
+        <span>@Html.ValidationMessageFor(m => m.Order.OrderItems[i].Price)</span>
+    </div>
+    <div class="form-row">
+        <span class="label">Quantity:</span>
+        <span class="input">@Html.EditorFor(m => m.Order.OrderItems[i].Quantity)</span>
+        <span>@Html.ValidationMessageFor(m => m.Order.OrderItems[i].Quantity)</span>
+    </div>
+    <div class="form-row">
+        <span class="label">Taxable:</span>
+        <span class="input">@Html.EditorFor(m => m.Order.OrderItems[i].Taxable)</span>
+        <span>@Html.ValidationMessageFor(m => m.Order.OrderItems[i].Taxable)</span>
+    </div>
+    <div class="form-row">
+        <span class="label">Description:</span>
+        <span class="input">@Html.EditorFor(m => m.Order.OrderItems[i].Description)</span>
+        <span>@Html.ValidationMessageFor(m => m.Order.OrderItems[i].Description)</span>
+    </div>
+}

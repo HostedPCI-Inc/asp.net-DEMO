@@ -1,0 +1,16 @@
+﻿@model HostedPCI.WebUI.Models.AuthOrSaleRequestModel
+@{
+    ViewBag.Title = "Auth";
+    ViewBag.PageTitle = "Auth";
+}
+@using (Html.BeginForm("Auth", "Default", FormMethod.Post))
+{
+    @Html.Partial("~/Views/Default/Partials/_CustomerInfo.cshtml", Model)
+    @Html.Partial("~/Views/Default/Partials/_CreditCard.cshtml", Model)
+    @Html.Partial("~/Views/Default/Partials/_Transaction.cshtml", Model)    
+    @Html.Partial("~/Views/Default/Partials/_Order.cshtml", Model)    
+    
+    <div>
+        <input type="submit" value="Send request" />
+    </div>
+} 

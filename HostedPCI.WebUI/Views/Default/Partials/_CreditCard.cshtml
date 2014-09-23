@@ -1,0 +1,29 @@
+﻿@model HostedPCI.WebUI.Models.AuthOrSaleRequestModel
+<div>
+    <h2>Credit Card</h2>
+</div>
+<div class="form-row">
+    <span class="label">CardNumber<span class="red">*</span>:</span>
+    <span class="input">@Html.EditorFor(m => m.CreditCard.CardNumber)</span>
+    <span>@Html.ValidationMessageFor(m => m.CreditCard.CardNumber)</span>
+</div>
+<div class="form-row">
+    <span class="label">CardType<span class="red">*</span>:</span>
+    <span class="input">@Html.EditorFor(m => m.CreditCard.CardType)</span>
+    <span>@Html.ValidationMessageFor(m => m.CreditCard.CardType)</span>
+</div>
+<div class="form-row">
+    <span class="label">CvvCode<span class="red">*</span>:</span>
+    <span class="input">@Html.EditorFor(m => m.CreditCard.CvvCode)</span>
+    <span>@Html.ValidationMessageFor(m => m.CreditCard.CvvCode)</span>
+</div>
+<div class="form-row">
+    <span class="label">ExpirationMonth<span class="red">*</span>:</span>
+    <span class="input">@Html.EditorFor(m => m.CreditCard.ExpirationMonth)</span>
+    <span>@Html.ValidationMessageFor(m => m.CreditCard.ExpirationMonth)</span>
+</div>
+<div class="form-row">
+    <span class="label">ExpirationYear<span class="red">*</span>:</span>
+    <span class="input">@Html.EditorFor(m => m.CreditCard.ExpirationYear)</span>
+    <span>@Html.ValidationMessageFor(m => m.CreditCard.ExpirationYear)</span>
+</div>

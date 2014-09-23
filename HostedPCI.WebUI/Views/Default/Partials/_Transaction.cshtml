@@ -1,0 +1,69 @@
+﻿@model HostedPCI.WebUI.Models.AuthOrSaleRequestModel
+<div>
+    <h2>Transaction</h2>
+</div>
+<div class="form-row">
+    <span class="label">Amount<span class="red">*</span>:</span>
+    <span class="input">@Html.EditorFor(m => m.Transaction.Amount)</span>
+    <span>@Html.ValidationMessageFor(m => m.Transaction.Amount)</span>
+</div>
+<div class="form-row">
+    <span class="label">CurrencyCode<span class="red">*</span>:</span>
+    <span class="input">@Html.EditorFor(m => m.Transaction.CurrencyCode)</span>
+    <span>@Html.ValidationMessageFor(m => m.Transaction.CurrencyCode)</span>
+</div>
+<div class="form-row">
+    <span class="label">MerchantRefId<span class="red">*</span>:</span>
+    <span class="input">@Html.EditorFor(m => m.Transaction.MerchantRefId)</span>
+    <span>@Html.ValidationMessageFor(m => m.Transaction.MerchantRefId)</span>
+</div>
+<div class="form-row">
+    <span class="label">Comment:</span>
+    <span class="input">@Html.EditorFor(m => m.Transaction.Comment)</span>
+    <span>@Html.ValidationMessageFor(m => m.Transaction.Comment)</span>
+</div>
+<div class="form-row">
+    <span class="label">DuplicateWindowSeconds:</span>
+    <span class="input">@Html.EditorFor(m => m.Transaction.DuplicateWindowSeconds)</span>
+    <span>@Html.ValidationMessageFor(m => m.Transaction.DuplicateWindowSeconds)</span>
+</div>
+<div class="form-row">
+    <span class="label">ExtraParam1:</span>
+    <span class="input">@Html.EditorFor(m => m.Transaction.ExtraParam1)</span>
+    <span>@Html.ValidationMessageFor(m => m.Transaction.ExtraParam1)</span>
+</div>
+<div class="form-row">
+    <span class="label">ExtraParam2:</span>
+    <span class="input">@Html.EditorFor(m => m.Transaction.ExtraParam2)</span>
+    <span>@Html.ValidationMessageFor(m => m.Transaction.ExtraParam2)</span>
+</div>
+<div class="form-row">
+    <span class="label">ExtraParam3:</span>
+    <span class="input">@Html.EditorFor(m => m.Transaction.ExtraParam3)</span>
+    <span>@Html.ValidationMessageFor(m => m.Transaction.ExtraParam3)</span>
+</div>
+<div class="form-row">
+    <span class="label">ExtraParam4:</span>
+    <span class="input">@Html.EditorFor(m => m.Transaction.ExtraParam4)</span>
+    <span>@Html.ValidationMessageFor(m => m.Transaction.ExtraParam4)</span>
+</div>
+<div class="form-row">
+    <span class="label">ExtraParam5:</span>
+    <span class="input">@Html.EditorFor(m => m.Transaction.ExtraParam5)</span>
+    <span>@Html.ValidationMessageFor(m => m.Transaction.ExtraParam5)</span>
+</div>
+<div class="form-row">
+    <span class="label">InstallmentCount:</span>
+    <span class="input">@Html.EditorFor(m => m.Transaction.InstallmentCount)</span>
+    <span>@Html.ValidationMessageFor(m => m.Transaction.InstallmentCount)</span>
+</div>
+<div class="form-row">
+    <span class="label">LangCode:</span>
+    <span class="input">@Html.EditorFor(m => m.Transaction.LangCode)</span>
+    <span>@Html.ValidationMessageFor(m => m.Transaction.LangCode)</span>
+</div>
+<div class="form-row">
+    <span class="label">PayName:</span>
+    <span class="input">@Html.EditorFor(m => m.Transaction.PayName)</span>
+    <span>@Html.ValidationMessageFor(m => m.Transaction.PayName)</span>
+</div>

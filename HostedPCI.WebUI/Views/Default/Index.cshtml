@@ -1,0 +1,34 @@
+﻿@{
+    ViewBag.Title = "Menu";
+    ViewBag.PageTitle = "Menu";
+    ViewBag.IsIndexPage = true;
+}
+<ul>
+    <li>Auth request:
+        <ul>
+            <li><a href="@Url.Action("Auth")">Test</a></li>
+            <li><a href="@Url.Action("DummyAuth")">Dummy</a></li>
+        </ul>
+    </li>
+    <li>Sale request:
+        <ul>
+            <li><a href="@Url.Action("Sale")">Test</a></li>
+            <li><a href="@Url.Action("DummySale")">Dummy</a></li>
+        </ul>
+    </li>
+    <li>Capture request:
+        <ul>
+            <li><a href="@Url.Action("Capture")">Test</a></li>
+        </ul>
+    </li>
+    <li>Credit request:
+        <ul>
+            <li><a href="@Url.Action("Credit")">Test</a></li>
+        </ul>
+    </li>
+    <li>Void request:
+        <ul>
+            <li><a href="@Url.Action("Void")">Test</a></li>
+        </ul>
+    </li>
+</ul>

@@ -1,0 +1,23 @@
+﻿@model HostedPCI.WebUI.Models.AuthOrSaleRequestModel
+<div>
+    <h2>Order</h2>
+</div>
+<div class="form-row">
+    <span class="label">InvoiceNumber:</span>
+    <span class="input">@Html.EditorFor(m => m.Order.InvoiceNumber)</span>
+    <span>@Html.ValidationMessageFor(m => m.Order.InvoiceNumber)</span>
+</div>
+<div class="form-row">
+    <span class="label">TotalAmount:</span>
+    <span class="input">@Html.EditorFor(m => m.Order.TotalAmount)</span>
+    <span>@Html.ValidationMessageFor(m => m.Order.TotalAmount)</span>
+</div>
+<div class="form-row">
+    <span class="label">Description:</span>
+    <span class="input">@Html.EditorFor(m => m.Order.Description)</span>
+    <span>@Html.ValidationMessageFor(m => m.Order.Description)</span>
+</div>
+<div>
+    <h3>Order items</h3>
+    @Html.Partial("~/Views/Default/Partials/_OrderItem.cshtml", Model)
+</div>
